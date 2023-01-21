@@ -48,20 +48,3 @@ function pickColor() {
   const value = color.value;
   sentence.style.color = value;
 }
-
-// convert to pdf
-window.jsPDF = window.jspdf.jsPDF;
-const docPDF = new jsPDF();
-function generatePDF() {
-  const elementHTML = document.getElementById("editor");
-  docPDF.html(elementHTML, {
-    callback: function (docPDF) {
-      docPDF.save("MyFile.pdf");
-    },
-    x: 15,
-    y: 15,
-    width: 170,
-    windowWidth: 650,
-    spellcheck: false,
-  });
-}
