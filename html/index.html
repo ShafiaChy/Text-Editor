@@ -45,19 +45,19 @@
               <button
                 type="button"
                 onclick="formatText('bold')"
-                class="focus:ring focus:ring-violet-300 focus:rounded-lg py-1 px-3"
+                class="focus:bg-blue-500 focus:ring focus:rounded-lg py-1 px-3"
               >
                 <i class="fa-solid fa-bold"></i>
               </button>
               <button
                 onclick="formatText('italic')"
-                class="focus:ring focus:ring-violet-300 focus:rounded-lg py-1 px-3"
+                class="focus:bg-blue-500 focus:ring focus:rounded-lg py-1 px-3"
               >
                 <i class="fa-solid fa-italic"></i>
               </button>
               <button
                 onclick="formatText('underline')"
-                class="focus:ring focus:ring-violet-300 focus:rounded-lg py-1 px-3"
+                class="focus:bg-blue-500 focus:ring focus:rounded-lg py-1 px-3"
               >
                 <i class="fa-solid fa-underline"></i>
               </button>
@@ -66,25 +66,25 @@
             <div>
               <button
                 onclick="textAlign('left')"
-                class="align py-1 px-3 focus:ring focus:ring-violet-300 focus:rounded-lg"
+                class="align py-1 px-3 focus:bg-blue-500 focus:ring focus:rounded-lg"
               >
                 <i class="fa-solid fa-align-left"></i>
               </button>
               <button
                 onclick="textAlign('center')"
-                class="align py-1 px-3 focus:ring focus:ring-violet-300 focus:rounded-lg"
+                class="align py-1 px-3 focus:bg-blue-500 focus:ring focus:rounded-lg"
               >
                 <i class="fa-solid fa-align-center"></i>
               </button>
               <button
                 onclick="textAlign('right')"
-                class="align py-1 px-3 focus:ring focus:ring-violet-300 focus:rounded-lg"
+                class="align py-1 px-3 focus:bg-blue-500 focus:ring focus:rounded-lg"
               >
                 <i class="fa-solid fa-align-right"></i>
               </button>
               <button
                 onclick="textAlign('justify')"
-                class="align py-1 px-3 focus:ring focus:ring-violet-300 focus:rounded-lg"
+                class="align py-1 px-3 focus:bg-blue-500 focus:ring focus:rounded-lg"
               >
                 <i class="fa-solid fa-align-justify"></i>
               </button>
@@ -92,12 +92,14 @@
 
             <!-- font size, uppercase/lowercase and text color -->
             <div class="rounded-lg flex justify-center items-center ">
-              <input class="w-11 text-xl bg-blue-200 font-semibold rounded-lg focus:ring focus:ring-violet-300 focus:rounded-lg" id="font-size" type="number" value="16" min="1" max="100" onchange="changeFontSize()">
+
+              <input class="w-11 text-xl bg-blue-200 font-semibold rounded-lg focus:bg-blue-500 focus:ring focus:rounded-lg" id="font-size" type="number" value="16" min="1" max="100" onchange="changeFontSize()">
               </button>
-              <button id='text-transform' onclick="transformText()" class="focus:ring focus:ring-violet-300 focus:rounded-lg text-xl py-1 px-3">
+              <button id='text-transform' onclick="transformText()" class="focus:bg-blue-500 focus:ring focus:rounded-lg text-xl py-1 px-3">
                 <span class="font-semibold">aA</span>
               </button>
-              <input id="pick-color" type="color" class="focus:ring focus:ring-violet-300 focus:rounded-lg ml-3" onchange="pickColor()">
+              <input id="pick-color" type="color" class="focus:bg-blue-500 focus:ring focus:rounded-lg ml-3" onchange="pickColor()">
+
             </div>
           </div>
            
