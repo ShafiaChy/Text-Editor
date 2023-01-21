@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Login</title>
+  </head>
+  <body class="bg-gradient-to-r from-pink-50 via-pink-100 to-pink-100">
+    <section>
+      <div
+        class="shadow-xl rounded-lg mt-24 grid md:grid-cols-2 container w-3/4 h-[500px] mx-auto"
+      >
+        <div
+          class="bg-white flex justify-center items-center order-2 md:order-1"
+        >
+          <div class="w-3/4">
+            <h1 class="text-center mb-5 text-4xl font-bold">Login</h1>
+            <form class="flex flex-col mx-auto" action="">
+              <input
+                id="user-email"
+                class="mb-3 h-10 pl-5 border-2 bg-gray-100"
+                type="text"
+                placeholder="Email"
+              />
+              <input
+                id="user-password"
+                class="mb-3 h-10 pl-5 border-2 bg-gray-100"
+                type="text"
+                placeholder="Password"
+              />
+
+              <input
+                id="btn-submit"
+                class="w-2/6 py-2 p-3 mx-auto bg-gradient-to-r from-red-500 via-red-500 to-red-700"
+                type="submit"
+                value="login"
+              />
+            </form>
+          </div>
+        </div>
+        <div
+          class="flex justify-center items-center bg-gradient-to-r from-red-500 via-red-500 to-red-700 order-1 md:order-2"
+        >
+          <div class="text-3xl text-white font-bold text-center">
+            <img class="w-2/6 mx-auto" src="../Images/login.png" alt="" />
+            <h1>Login To Unlock Your</h1>
+            <h1>Text Editor</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="../js/login.js"></script>
+  </body>
+</html>
