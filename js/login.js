@@ -1,3 +1,4 @@
+//Login
 document.getElementById("btn-submit").addEventListener("click", function (e) {
   e.preventDefault();
   const emailField = document.getElementById("user-email");
